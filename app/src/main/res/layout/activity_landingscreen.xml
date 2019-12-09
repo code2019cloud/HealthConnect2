@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="386dp"
+        android:layout_height="341dp"
+        android:src="@drawable/hosp_logo">
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/patientcircle"
+            android:onClick="patientLinkClick"
+            android:text="Patient"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium">
+        </Button>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/providercircle"
+            android:onClick="providerLinkclick"
+            android:text="Provider"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium">
+        </Button>
+    </LinearLayout>
+</LinearLayout>

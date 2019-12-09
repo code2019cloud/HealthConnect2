@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">HealthConnect2</string>
+        <string name="dist_prompt"> Select district</string>
+        <string-array name="dst_arrays">
+            <item>Thiruvananthapuram</item>
+            <item>Kollam</item>
+            <item>Pathanamthitta</item>
+            <item>Alappuzha</item>
+            <item>Kottayam</item>
+            <item>Idukki</item>
+            <item>Ernakulam</item>
+            <item>Trichur</item>
+            <item>Palakkad</item>
+            <item>Malappuram</item>
+            <item>Kozhikode</item>
+            <item>Wynadu</item>
+            <item>Kannoor</item>
+            <item>Kasargod</item>
+        </string-array>
+</resources>

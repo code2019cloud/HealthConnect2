@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/hosp_logo">
+    </ImageView>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:entries="@array/dst_arrays"
+        android:prompt="@array/dst_arrays">
+    </Spinner>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@android:color/holo_green_light"
+                android:text="HOSPITALS"
+                android:onClick="hospitalLinkClick">
+            </Button>
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@android:color/holo_green_light"
+                android:text="SPECIALITIES"
+                android:onClick="specialitiesLinkClick">
+            </Button>
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@android:color/holo_green_light"
+                android:text="DOCTORS"
+                android:onClick="doctorLinkClick">
+            </Button>
+        </TableRow>
+    </TableLayout>
+
+
+    <TableLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:textColor="#3CBC3F"
+                    android:text="ABC Hospital "
+                    android:onClick="patientSelectDept">
+                </TextView>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:textColor="#3CBC3F"
+                    android:text="XYZ Hospital">
+                </TextView>
+            </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:orientation="horizontal" >
+
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/home_icon"
+            android:layout_weight="2"
+            android:onClick="patientHomeClick">
+        </ImageView>
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/search_icon"
+            android:layout_weight="2"
+            android:onClick="patientSearchClick">
+        </ImageView>
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/profile_icon"
+            android:layout_weight="2"
+            android:onClick="patientProfileClick">
+        </ImageView>
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/history3_icon"
+            android:layout_weight="2">
+        </ImageView>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

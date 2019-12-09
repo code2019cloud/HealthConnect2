@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/hosp_logo"></ImageView>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/dst_arrays"
+        android:prompt="@array/dst_arrays"></Spinner>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="hospital  1"></TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Specality  1"></TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Booking for Doctor  1"></TextView>
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="@android:color/holo_green_light"
+                android:text="HOSPITALS"></Button>
+
+            <Button
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="@android:color/holo_green_light"
+                android:text="SPECIALITIES"></Button>
+
+            <Button
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="@android:color/holo_green_light"
+                android:text="DOCTORS"></Button>
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select slot ">
+
+            </TextView>
+
+        <RadioGroup
+            android:layout_width="342dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/timeslot1RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 am"
+                android:textColor="#3CBC3F"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/timeslot2RadioButton1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="11am"
+                android:textColor="#3CBC3F"></RadioButton>
+            <RadioButton
+                android:id="@+id/timeslot3RadioButton1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="12pm"
+                android:textColor="#3CBC3F"></RadioButton>
+            <RadioButton
+                android:id="@+id/timeslot4RadioButton1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="1pm"
+                android:textColor="#3CBC3F"></RadioButton>
+
+        </RadioGroup>
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_green_light"
+                android:onClick="patientBookConfirmClick"
+                android:text="Confirm Booking "
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"></Button>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="2"
+            android:src="@drawable/home_icon"
+            android:onClick="patientHomeClick"></ImageView>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="2"
+            android:src="@drawable/search_icon"
+            android:onClick="patientSearchClick"></ImageView>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="2"
+            android:src="@drawable/profile_icon"
+            android:onClick="patientProfileClick"></ImageView>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="2"
+            android:src="@drawable/history3_icon"></ImageView>
+
+
+    </LinearLayout>
+</LinearLayout>
