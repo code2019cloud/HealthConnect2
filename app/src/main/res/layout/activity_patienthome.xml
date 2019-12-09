@@ -12,12 +12,16 @@
             android:src="@drawable/hosp_logo">
         </ImageView>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="Select District"></TextView>
         <Spinner
             android:id="@+id/spinner1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="250dp"
-            android:layout_marginLeft="100dp"
             android:entries="@array/dst_arrays"
             android:prompt="@array/dst_arrays">
         </Spinner>
