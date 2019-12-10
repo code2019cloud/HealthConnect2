@@ -14,7 +14,7 @@ public class PatientSelectSlotActivity extends AppCompatActivity {
         setContentView(R.layout.activity_patientselectslot);
     }
 
-  /*  public void hospitalLinkClick(View view){
+   public void hospitalLinkClick(View view){
         Intent intent=new Intent(this, PatientSearchMainActivity.class);
         startActivity(intent);
     }
@@ -27,7 +27,7 @@ public class PatientSelectSlotActivity extends AppCompatActivity {
         Intent intent=new Intent(this, PatientSelectDoctorActivity.class);
         startActivity(intent);
     }
-    */
+
     public void patientBookConfirmClick(View view){
         Intent intent=new Intent(this, PatientBookConfirmedActivity.class);
         startActivity(intent);

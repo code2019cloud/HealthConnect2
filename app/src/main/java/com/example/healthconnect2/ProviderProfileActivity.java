@@ -11,7 +11,7 @@ public class ProviderProfileActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_patientprofile);
+        setContentView(R.layout.activity_providerprofile);
     }
     /*
     public void addDependentClick(View view){
@@ -23,24 +23,29 @@ public class ProviderProfileActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-*/
+
     public void patientProfileedit(View view){
         Intent intent=new Intent(this, ProviderProfileActivity.class);
         startActivity(intent);
-    }
-    public void patientHomeClick(View view)
+    }*/
+    public void providerHomeClick(View view)
     {
-        Intent intent=new Intent(this, PatientHomeActivity.class);
+        Intent intent=new Intent(this, LandingScreenActivity.class);
         startActivity(intent);
     }
-    public void patientSearchClick(View view){
-        Intent intent=new Intent(this, PatientSearchMainActivity.class);
+    public void providerProfileClick(View view){
+        Intent intent=new Intent(this, ProviderProfileActivity.class);
         startActivity(intent);
     }
 
-    public void patientProfileClick(View view)
+    public void providerDrClick(View view)
     {
-        Intent intent=new Intent(this, ProviderProfileActivity.class);
+        Intent intent=new Intent(this, ProviderDrActivity.class);
+        startActivity(intent);
+    }
+    public void providerSpecialityClick(View view)
+    {
+        Intent intent=new Intent(this, ProviderDepActivity.class);
         startActivity(intent);
     }
    /* public void patientHistoryClick(View view)

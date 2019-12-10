@@ -38,7 +38,7 @@
         android:layout_height="100dp"
         android:layout_marginLeft="150dp"
         android:src="@drawable/signinprovider_icon"
-        android:onClick="patientSigninLinkClick">
+        android:onClick="providerSigninLinkClick">
     </ImageView>
     <TextView
         android:layout_width="match_parent"

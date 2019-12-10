@@ -25,7 +25,11 @@
         <activity android:name=".PatientBookConfirmedActivity"></activity>
         <activity android:name=".PatientSignupActivity"></activity>
         <activity android:name=".PatientProfileActivity"></activity>
-        <activity android:name= ".ProviderSigninActivity"></activity>
+        <activity android:name=".ProviderSigninActivity"></activity>
+        <activity android:name=".ProviderProfileActivity"></activity>
+        <activity android:name=".ProviderDepActivity"></activity>
+        <activity android:name=".ProviderDrActivity"></activity>
+        <activity android:name=".PatientBookHistoryActivity"></activity>
     </application>
 
 </manifest>

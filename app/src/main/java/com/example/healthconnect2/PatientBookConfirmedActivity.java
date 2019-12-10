@@ -26,12 +26,12 @@ public class PatientBookConfirmedActivity extends AppCompatActivity {
     {
         Intent intent=new Intent(this, PatientProfileActivity.class);
         startActivity(intent);
-    }/*
+    }
     public void patientHistoryClick(View view)
     {
         Intent intent=new Intent(this, PatientBookHistoryActivity.class);
         startActivity(intent);
     }
 
-   */
+
 }
